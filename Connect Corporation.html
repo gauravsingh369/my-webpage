@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locallink</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #f4f4f4;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .header {
+            background-color: #005ab4;
+            color: white;
+            padding: 10px;
+        }
+
+        .buttons-container {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        button {
+            background-color: #005ab4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #d81b60;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: white;
+            background-color: #005ab4;
+        }
+
+        .marquee {
+            font-size: 18px;
+            color: #005ab4;
+            font-weight: bold;
+        }
+
+        .google-search {
+            margin: 20px 0;
+        }
+
+        .google-search input {
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .google-search button {
+            padding: 10px;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .google-search button:hover {
+            background-color: #357ae8;
+        }
+
+        hr {
+            border-top: 2px solid ##005ab4;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>locallink</h1>
+            <p>Find your local services easily</p>
+        </div><br>
+
+        <div class="marquee">
+            <marquee speed="20">Link to your locals - Explore nearby services</marquee>
+        </div>
+
+        <hr>
+
+        <div class="google-search">
+            <input type="text" id="google-shopping-search" placeholder="Search for products on Google">
+            <button onclick="searchGoogle()">Search</button>
+        </div>
+
+        <div class="buttons-container">
+            <button onclick="openRestaurant()">Restaurant</button>
+            <button onclick="openShops()">Shops</button>
+
+
+
+            <button onclick="openSaloons()">Saloons</button>
+            <button onclick="openFarms()">Farms</button>
+            
+            <button onclick="openGym()">GYM</button>
+        </div><br><br><br><br><br>
+
+        <div class="footer"><br>
+            <font size=5>People's Voice</font><hr>
+            <h3>Mr. Amar</h3>
+            <h3>Very Great Experience</h3>
+            <h3>Mr. Dev</h3>
+            <h3>Awesome</h3>
+            <h3>Mr. Avneesh</h3>
+            <h3>Great experience</h3>
+            <h3>Mr. Pratap</h3>
+            <h3>Need to some improvement</h3><hr>
+            <h4>For Your Suggesitions Email on:- connectcoorporatives@gmail.com</h4><br><br> </div>
+            <p>©locallink.com 2024</p>
+    </div>
+
+    <script>
+        // Google Shopping search function
+        function searchGoogle() {
+            const query = document.getElementById("google-shopping-search").value;
+            if (query) {
+                const googleSearchURL = `https://google.com/search?q=${encodeURIComponent(query)}`;
+                window.open(googleSearchURL, "_blank");
+            } else {
+                alert("Please enter a search term.");
+            }
+        }
+
+        // Button functions for different services
+        function openRestaurant() {
+            // Replace the URL with actual restaurant service link
+            window.open("https://www.google.com/search?q=restaurant+near+me", "_blank");
+        }
+
+        function openShops() {
+            // Replace the URL with actual shops service link
+            window.open("https://www.google.com/search?q=shops+near+me", "_blank");
+        }
+
+        function openHospital() {
+            // Replace the URL with actual hospital service link
+            window.open("https://www.google.com/search?q=hospitals+near+me", "_blank");
+        }
+
+        function openSchools() {
+            // Replace the URL with actual schools service link
+            window.open("https://www.google.com/search?q=schools+near+me", "_blank");
+        }
+
+        function openBanks() {
+            // Replace the URL with actual banks service link
+            window.open("https://www.google.com/search?q=banks+near+me", "_blank");
+        }
+
+        function openSaloons() {
+            // Replace the URL with actual saloons service link
+            window.open("https://www.google.com/search?q=saloons+near+me", "_blank");
+        }
+
+        function openFarms() {
+            // Replace the URL with actual farms service link
+            window.open("https://www.google.com/search?q=farms+near+me", "_blank");
+        }
+
+        function openPolice() {
+            // Replace the URL with actual police service link
+            window.open("https://www.google.com/search?q=police+near+me", "_blank");
+        }
+
+        function openFlights() {
+            // Replace the URL with actual flights service link
+            window.open("https://www.google.com/search?q=flights", "_blank");
+        }
+
+        function openGym() {
+            // Replace the URL with actual gym service link
+            window.open("https://www.google.com/search?q=gyms+near+me", "_blank");
+        }
+    </script>
+
+</body>
+
+</html>
